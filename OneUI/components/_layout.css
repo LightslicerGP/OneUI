@@ -6,13 +6,13 @@
     justify-content: center;
     flex-direction: column;
     height: 40%;
-    padding: 6em;
+    padding: 7em;
 }
 
 .oui-viewing-title {
     text-align: center;
     word-wrap: break-word;
-    width: 60%;
+    width: 90%;
 }
 
 .oui-interaction {
