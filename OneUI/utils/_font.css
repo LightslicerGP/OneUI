@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: url('../fonts/SamsungSharpSans-Regular.ttf');
+  font-weight: 100;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
-}
-
-@media (min-width: var(--s-tablet)) {
-  font-size: 15px;
 }
 
 .oui-page-title {
@@ -38,6 +40,7 @@ a {
   color: var(--primary);
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: var(--active);
 }
