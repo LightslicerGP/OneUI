@@ -1,7 +1,7 @@
 /**
  * https://github.com/WICG/focus-visible
  */
-function init() {
+ function init() {
   var hadKeyboardEvent = true;
   var hadFocusVisibleRecently = false;
   var hadFocusVisibleRecentlyTimeout = null;
