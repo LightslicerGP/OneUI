@@ -50,7 +50,7 @@ p {
 	height: max-content;
 }
 
-#clock {
+#analog {
 	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
 	border-radius: 100vw;
 	width: 25vw;
@@ -58,9 +58,10 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 5vw;
 }
 
-#clock:before {
+#analog:before {
 	content: '';
 	width: 1vw;
 	height: 1vw;
@@ -104,7 +105,7 @@ p {
 	position: absolute;
 	width: 0.1vw;
 	height: 11vw;
-	background-color: #ffffff;
+	background-color: var(--text);
 	z-index: 9;
 	border-radius: 100vw;
 	margin-bottom: 11vw;
