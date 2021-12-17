@@ -65,7 +65,7 @@ p {
 	content: '';
 	width: 1vw;
 	height: 1vw;
-	background-color: white;
+	background-color: var(--text);
 	border-radius: 100vw;
 	z-index: 100;
 }
@@ -106,8 +106,28 @@ p {
 	width: 0.1vw;
 	height: 11vw;
 	background-color: var(--text);
-	z-index: 9;
+	z-index: 8;
 	border-radius: 100vw;
 	margin-bottom: 11vw;
 	transform-origin: bottom;
+}
+
+#time {
+	display: flex;
+}
+
+#time > div {
+	font-size: 4vw;
+}
+
+#ampm {
+	margin-left: 1vw;
+}
+
+#date {
+	font-size: 3vw;
+}
+
+#media {
+	width: 30vw;
 }
