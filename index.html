@@ -9,6 +9,29 @@
 	</script>
 	<script defer src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/oui.js">
 	</script>
+	<script>
+		
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+	</script>
 </head>
 <body>
 	<main class="container">
@@ -17,6 +40,8 @@
 		</div>
 		<div class="oui-bubble">
 			<p class="oui-overlay-bubble-item">Hey! This site is just eperimental (except the Daily Board tab, which is the Daily Board for Samsung tablets, but can be accessed by any device) and i just wanted to make a samsung-like app, so explore!</p>
+			<input type="button" value="Enter FullScreen" class="oui-button" onclick="openFullscreen();">
+			<input type="button" value="Exit FullScreen" class="oui-button" onclick="closeFullscreen();">
 		</div>
 		<div class="oui-interaction">
 			<div class="oui-bubble">
