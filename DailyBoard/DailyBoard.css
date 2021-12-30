@@ -50,6 +50,14 @@ p {
 	height: max-content;
 }
 
+#media {
+	width: 28vw;
+	height: max-content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 #analog {
 	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
 	border-radius: 100vw;
@@ -127,8 +135,14 @@ p {
 	font-size: 3vw;
 }
 
+#digital {
+	margin-bottom: 2vw;
+}
+
 #fullscreen {
-	margin-top: 3vw;
+	padding: 1vw;
+  width: 12vw;
+  height: 5vw;
 }
 
 #switchfulscreen {
@@ -154,5 +168,31 @@ p {
 
 input:checked + #switchfullscreenlabel {
 	box-shadow: inset 1vw 1vw 2vw var(--shadow), inset -1vw -1vw 2vw var(--light);
+}
 
+#exit {
+  width: 12vw;
+  height: 5vw;
+	padding: 1vw;
+}
+
+#exitbutton {
+	display: block;
+	font-size: 1.7vw;
+  width: 12vw;
+  height: 5vw;
+  background-color: var(--main-color);
+	border: none;
+	border-radius: 3vw;
+	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
+	cursor: pointer;
+}
+
+#exitbutton:active {
+	box-shadow: inset 1vw 1vw 2vw var(--shadow), inset -1vw -1vw 2vw var(--light);
+}
+
+#exitbuttonanchor {
+	width: auto;
+	height: auto;
 }
