@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Daily Board</title>
-	<link href="../DailyBoard/DailyBoard.css" rel="stylesheet">
-</head>
-<body>
-	<div id="clock">
 
-		<div id="analog">
-			<div id="hr"></div>
-			<div id="mn"></div>
-			<div id="sc"></div>
-		</div>
+  <head>
+    <title>Daily Board</title>
+    <link href="../DailyBoard/DailyBoard.css" rel="stylesheet">
+    <script>
+      var elem = document.documentElement;
 
-		<div id="digital">
+      function fullscreenSwitch() {
+        if (document.getElementById('switchfulscreen').checked == true) {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) {
+            /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) {
+            /* IE11 */
+            elem.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            /* Safari */
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            /* IE11 */
+            document.msExitFullscreen();
+          }
+        }
+      }
+    </script>
+  </head>
 
-			<div id="time">
-				<div id="hour"></div>
-				<div id="minutes"></div>
-				<div id="ampm"></div>
+  <body>
+    <div id="clock">
+      <div id="analog">
+        <div id="hr"></div>
+        <div id="mn"></div>
+        <div id="sc"></div>
+      </div>
+    </div>
+
+    <div id="media">
+      <div id="digital">
+        <div id="time">
+          <div id="hour"></div>
+          <div id="minutes"></div>
+          <div id="ampm"></div>
+        </div>
+        <div id="date">
+          <span id="week"></span>
+          <span id="day"></span>
+          <span id="month"></span>
+          <span id="year"></span>
+        </div>
+      </div>
+			<div id="fullscreen">
+				<input type="checkbox" id="switchfulscreen" onclick="fullscreenSwitch();">
+				<label for="switchfulscreen" id="switchfullscreenlabel">
+					Fullscreen
+				</label>
 			</div>
+    </div>
+    <script src="../DailyBoard/DailyBoard.js">
+    </script>
+  </body>
 
-			<div id="date">
-				<span id="week"></span>
-				<span id="day"></span>
-        <span id="month"></span>
-        <span id="year"></span>
-			</div>
-
-		</div>
-
-	</div>
-	<div id="media">
-    Hey! Im still working here, but i would reccomend puttin your device in landscape! Thanks! (also this sight can be viewed in light OR dark mode, so try it out!)
-  </div>
-	<script src="../DailyBoard/DailyBoard.js">
-	</script>
-</body>
 </html>

@@ -58,7 +58,6 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 5vw;
 }
 
 #analog:before {
@@ -128,7 +127,31 @@ p {
 	font-size: 3vw;
 }
 
-#media {
-	width: 30vw;
-	font-size: 3vw;
+#fullscreen {
+	margin-top: 3vw;
+}
+
+#switchfulscreen {
+	width: 0vw;
+	height: 0vw;
+	visibility: hidden;
+	display: none;
+}
+
+#switchfullscreenlabel {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  width: 12vw;
+  height: 5vw;
+  background-color: var(--main-color);
+	border-radius: 3vw;
+  position: relative;
+  cursor: pointer;
+	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
+}
+
+input:checked + #switchfullscreenlabel {
+	box-shadow: inset 1vw 1vw 2vw var(--shadow), inset -1vw -1vw 2vw var(--light);
+
 }
