@@ -139,10 +139,10 @@ p {
 	margin-bottom: 2vw;
 }
 
-#fullscreen {
-	padding: 1vw;
+#fullscreen, #exit {
   width: 12vw;
   height: 5vw;
+	padding: 1vw;
 }
 
 #switchfulscreen {
@@ -170,12 +170,6 @@ input:checked + #switchfullscreenlabel {
 	box-shadow: inset 1vw 1vw 2vw var(--shadow), inset -1vw -1vw 2vw var(--light);
 }
 
-#exit {
-  width: 12vw;
-  height: 5vw;
-	padding: 1vw;
-}
-
 #exitbutton {
 	display: block;
 	font-size: 1.7vw;
@@ -195,4 +189,64 @@ input:checked + #switchfullscreenlabel {
 #exitbuttonanchor {
 	width: auto;
 	height: auto;
+}
+
+@media (orientation: portrait) {
+	body {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#analog {
+		width: 50vw;
+		height: 50vw;
+	}
+
+	#hr:before, #hr {
+		width: 1vw;
+		height: 14vw;
+		margin-bottom: 14vw;
+	}
+
+	#mn:before, #mn {
+		width: 0.6vw;
+		height: 18vw;
+		margin-bottom: 18vw;
+	}
+
+	#sc:before, #sc {
+		width: 0.2vw;
+		height: 22vw;
+		margin-bottom: 22vw;;
+	}
+
+	#media {
+		width: 50vw;
+		padding-top: 18vw;
+	}
+
+	#digital {
+		margin-bottom: 4vw;
+	}
+
+	#time > div {
+    font-size: 9vw;
+	}
+
+	#date > span {
+		font-size: 4vw;
+	}
+
+	#fullscreen, #exit {
+		width: 21vw;
+		height: 10vw;
+		padding: 1vw;
+	}
+
+	#switchfullscreenlabel, #exitbutton {
+		width: 21vw;
+		height: 10vw;
+		font-size: 3vw;
+		border-radius: 5vw;
+	}
 }
