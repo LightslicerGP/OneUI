@@ -88,7 +88,7 @@ p {
 	position: absolute;
 	width: 0.5vw;
 	height: 7vw;
-	background-color: blue;
+	background-color: #0056ff;
 	z-index: 10;
 	border-radius: 100vw;
 	margin-bottom: 7vw;
@@ -100,7 +100,7 @@ p {
 	position: absolute;
 	width: 0.3vw;
 	height: 9vw;
-	background-color: red;
+	background-color: #000000;
 	z-index: 9;
 	border-radius: 100vw;
 	margin-bottom: 9vw;
