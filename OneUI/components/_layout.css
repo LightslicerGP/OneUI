@@ -16,7 +16,7 @@
     width: 90%;
 }
 
-.oui-interaction {
+.oui-interaction { 
     min-height: 60%;
     scroll-snap-align: start;
     margin-bottom: 60pt;
