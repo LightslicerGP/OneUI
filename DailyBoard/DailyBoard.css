@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: var(--text);
 	font-weight: normal;
 	list-style: none;
@@ -45,7 +45,8 @@ p {
 	color: var(--text);
 }
 
-#clock, #media {
+#clock,
+#media {
 	width: auto;
 	height: max-content;
 }
@@ -77,13 +78,16 @@ p {
 	z-index: 100;
 }
 
-#hr, #mn, #sc {
+#hr,
+#mn,
+#sc {
 	justify-content: center;
 	position: absolute;
 	border-radius: 100vw;
 }
 
-#hr:before, #hr {
+#hr:before,
+#hr {
 	content: '';
 	position: absolute;
 	width: 0.5vw;
@@ -95,7 +99,8 @@ p {
 	transform-origin: bottom;
 }
 
-#mn:before, #mn {
+#mn:before,
+#mn {
 	content: '';
 	position: absolute;
 	width: 0.3vw;
@@ -107,7 +112,8 @@ p {
 	transform-origin: bottom;
 }
 
-#sc:before, #sc {
+#sc:before,
+#sc {
 	content: '';
 	position: absolute;
 	width: 0.1vw;
@@ -123,7 +129,7 @@ p {
 	display: flex;
 }
 
-#time > div {
+#time>div {
 	font-size: 4vw;
 }
 
@@ -139,9 +145,10 @@ p {
 	margin-bottom: 2vw;
 }
 
-#fullscreen, #exit {
-  width: 12vw;
-  height: 5vw;
+#fullscreen,
+#exit {
+	width: 12vw;
+	height: 5vw;
 	padding: 1vw;
 }
 
@@ -153,29 +160,29 @@ p {
 }
 
 #switchfullscreenlabel {
-  display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1.7vw;
-  width: 12vw;
-  height: 5vw;
-  background-color: var(--main-color);
+	width: 12vw;
+	height: 5vw;
+	background-color: var(--main-color);
 	border-radius: 3vw;
-  position: relative;
-  cursor: pointer;
+	position: relative;
+	cursor: pointer;
 	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
 }
 
-input:checked + #switchfullscreenlabel {
+input:checked+#switchfullscreenlabel {
 	box-shadow: inset 1vw 1vw 2vw var(--shadow), inset -1vw -1vw 2vw var(--light);
 }
 
 #exitbutton {
 	display: block;
 	font-size: 1.7vw;
-  width: 12vw;
-  height: 5vw;
-  background-color: var(--main-color);
+	width: 12vw;
+	height: 5vw;
+	background-color: var(--main-color);
 	border: none;
 	border-radius: 3vw;
 	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
@@ -202,22 +209,26 @@ input:checked + #switchfullscreenlabel {
 		height: 50vw;
 	}
 
-	#hr:before, #hr {
+	#hr:before,
+	#hr {
 		width: 1vw;
 		height: 14vw;
 		margin-bottom: 14vw;
 	}
 
-	#mn:before, #mn {
+	#mn:before,
+	#mn {
 		width: 0.6vw;
 		height: 18vw;
 		margin-bottom: 18vw;
 	}
 
-	#sc:before, #sc {
+	#sc:before,
+	#sc {
 		width: 0.2vw;
 		height: 22vw;
-		margin-bottom: 22vw;;
+		margin-bottom: 22vw;
+		;
 	}
 
 	#media {
@@ -229,21 +240,23 @@ input:checked + #switchfullscreenlabel {
 		margin-bottom: 4vw;
 	}
 
-	#time > div {
-    font-size: 9vw;
+	#time>div {
+		font-size: 9vw;
 	}
 
-	#date > span {
+	#date>span {
 		font-size: 4vw;
 	}
 
-	#fullscreen, #exit {
+	#fullscreen,
+	#exit {
 		width: 21vw;
 		height: 10vw;
 		padding: 1vw;
 	}
 
-	#switchfullscreenlabel, #exitbutton {
+	#switchfullscreenlabel,
+	#exitbutton {
 		width: 21vw;
 		height: 10vw;
 		font-size: 3vw;
