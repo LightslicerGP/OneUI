@@ -15,10 +15,8 @@
   <link rel="icon" href="/logo.png">
 
   <script defer
-    src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/polyfill/focus-visible.js">
-    </script>
-  <script defer src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/oui.js">
-  </script>
+    src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/polyfill/focus-visible.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/SamsungInternet/OneUI-Web@master/oui-css/scripts/oui.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js');
@@ -50,15 +48,29 @@
           document.msExitFullscreen();
         }
       }
+    };
+
+const button = document.getElementById("install");
+
+function getPWADisplayMode() {
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+    if (document.referrer.startsWith('android-app://')) {
+        console.log('twa')
+        button.remove();
+    } else if (navigator.standalone || isStandalone) {
+        console.log('standalone')
+        button.remove();
     }
+    console.log('browser - always appears?');
+};
   </script>
 </head>
 
-<body>
+<body onload="getPWADisplayMode()">
   <main class="container">
     <div class="oui-viewing">
       <h1 class="oui-viewing-title">Welcome!</h1>
-      <button class="progressier-install-button">Install Progressive Web App</button>
+      <button id="install">install</button>
     </div>
     <div class="oui-bubble">
       <p class="oui-overlay-bubble-item">Hey! This site is just eperimental (except the Daily Board tab, which is the

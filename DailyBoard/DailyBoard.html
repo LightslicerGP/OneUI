@@ -4,6 +4,9 @@
 <head>
   <title>Daily Board</title>
   <link href="../DailyBoard/DailyBoard.css" rel="stylesheet">
+
+  <script defer src="../DailyBoard/DailyBoard.js">
+  </script>
   <script>
     var elem = document.documentElement;
 
@@ -45,15 +48,15 @@
   <div id="media">
     <div id="digital">
       <div id="time">
-        <div id="hour"></div>
-        <div id="minutes"></div>
-        <div id="ampm"></div>
+        <div id="hour">00:</div>
+        <div id="minutes">00</div>
+        <div id="ampm">AM</div>
       </div>
       <div id="date">
-        <span id="week"></span>
-        <span id="day"></span>
-        <span id="month"></span>
-        <span id="year"></span>
+        <span id="week">Mon</span>
+        <span id="day">19</span>
+        <span id="month">Dec,</span>
+        <span id="year">2022</span>
       </div>
     </div>
     <div id="fullscreen">
@@ -70,8 +73,6 @@
       </a>
     </div>
   </div>
-  <script src="../DailyBoard/DailyBoard.js">
-  </script>
 </body>
 
 </html>
