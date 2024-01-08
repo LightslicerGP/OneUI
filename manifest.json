@@ -2,6 +2,20 @@
     "name": "Samsung Daily Board",
     "short_name": "Daily Board",
     "start_url": "/?home=true",
+    "theme_color": "#545EB5",
+    "display": "fullscreen",
+    "background_color": "#545eb5",
+    "id": "/?homescreen=1",
+    "description": "Working on the PWA using the PWABuilder website 1/8/24",
+    "dir": "ltr",
+    "orientation": "any",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "prefer_related_applications": false,
+    "categories": [
+        "utilities"
+    ],
     "icons": [
         {
             "src": "icons/windows11/SmallTile.scale-100.png",
@@ -451,7 +465,5 @@
             "src": "icons/ios/1024.png",
             "sizes": "1024x1024"
         }
-    ],
-    "theme_color": "#545EB5",
-    "display": "fullscreen"
+    ]
 }
