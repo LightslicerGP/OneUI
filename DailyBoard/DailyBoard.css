@@ -60,7 +60,7 @@ p {
 }
 
 #analog {
-	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light);
+	box-shadow: 1vw 1vw 2vw var(--shadow), -1vw -1vw 2vw var(--light), inset 1vw 1vw 2vw var(--shadow), inset -1vw -1vw 2vw var(--light);
 	border-radius: 100vw;
 	width: 25vw;
 	height: 25vw;
